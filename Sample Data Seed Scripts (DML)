@@ -1,0 +1,30 @@
+-- Insert Departments
+INSERT INTO department VALUES
+(101, 'Engineering', 'Building A Fl 3', 'ENG-B2026'),
+(102, 'Data Analytics', 'Building B Fl 1', 'DAT-B2026'),
+(103, 'Human Resources', 'Building A Fl 1', 'HR-B2026');
+
+-- Insert Employees
+INSERT INTO employee VALUES
+(1001, 'Alice', 'Smith', 'alice.smith@corp.com', '555-0192', '2022-03-15', 'Senior Engineer', 95000.00, 101),
+(1002, 'Bob', 'Jones', 'bob.jones@corp.com', '555-0193', '2021-06-01', 'Lead Analyst', 88000.00, 102),
+(1003, 'Carol', 'White', 'carol.white@corp.com', '555-0194', '2023-01-10', 'HR Specialist', 62000.00, 103),
+(1004, 'David', 'Brown', 'david.brown@corp.com', '555-0195', '2020-11-20', 'Software Architect', 120000.00, 101);
+
+-- Insert Projects
+INSERT INTO project VALUES
+(501, 'Cloud Migration', '2026-01-01', '2026-12-31', 250000.00, 101),
+(502, 'BI Dashboard Development', '2026-02-15', '2026-08-30', 75000.00, 102),
+(503, 'HR Portal Upgrade', '2026-04-01', '2026-09-30', 45000.00, 103);
+
+-- Insert Project Assignments
+INSERT INTO project_assignment VALUES
+(1, 1001, 501, 'Lead Developer', 160.0),
+(2, 1004, 501, 'System Architect', 120.0),
+(3, 1002, 502, 'Data Modeler', 140.0);
+
+-- Insert Payroll Records
+INSERT INTO payroll (pay_id, emp_id, payment_date, gross_pay, tax_deduction) VALUES
+(9001, 1001, '2026-03-31', 7916.67, 1583.33),
+(9002, 1002, '2026-03-31', 7333.33, 1466.67),
+(9003, 1004, '2026-03-31', 10000.00, 2200.00);
